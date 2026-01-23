@@ -1,0 +1,47 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover */
+li:hover {
+    background: #e0f7fa;
+    transform: scale(1.02);
+}
+
+/* Imagen */
+li img {
+    display: none; /* empieza oculta */
+    margin-top: 10px;
+    width: 120px;
+}
+
+/* Animación */
+.mostrar img {
+    display: block;
+    animation: salto 0.5s ease;
+}
+
+@keyframes salto {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
